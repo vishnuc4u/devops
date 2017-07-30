@@ -12,7 +12,7 @@
   <profile>
   <profile>
   <id>sonar</id>
-           <properties>
+           </properties>
                     <sonar.host.url>
                              http://localhost:9000
                              </sonar.host.url>
