@@ -9,7 +9,16 @@
   <version>1.0-SNAPSHOT</version>
   <name>Parent</name>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
-
+  <profile>
+  <profile>
+  <id>sonar</id>
+           <properties>
+                    <sonar.host.url>
+                             http://localhost:9000
+                             </sonar.host.url>
+                    </profile>
+           </profiles>
+                       
   <modules>
     <module>multi-module</module>
     <module>single-module</module>
