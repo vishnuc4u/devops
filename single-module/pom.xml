@@ -16,7 +16,7 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
 
-<distributionManagement>
+ <distributionManagement>
     <!-- use the following if you're not using a snapshot version. -->
     <repository>
         <id>nexus</id>
@@ -29,6 +29,7 @@
         <name>RepositoryProxySnap</name>
         <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
+</distributionManagement> 
 
   <build>
     <finalName>${project.artifactId}</finalName>
