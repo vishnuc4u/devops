@@ -21,7 +21,7 @@
     <module>webapp</module>
   </modules>
 
-<distributionManagement>
+ <distributionManagement>
     <!-- use the following if you're not using a snapshot version. -->
     <repository>
         <id>nexus</id>
@@ -34,6 +34,7 @@
         <name>RepositoryProxySnap</name>
         <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
+</distributionManagement> 
 
   <build>
     <plugins>
