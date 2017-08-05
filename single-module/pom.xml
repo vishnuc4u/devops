@@ -16,13 +16,19 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/single-module-site</url>
-    </site>
-  </distributionManagement>
+<distributionManagement>
+    <!-- use the following if you're not using a snapshot version. -->
+    <repository>
+        <id>nexus</id>
+        <name>RepositoryProxyRel</name>
+        <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+    </repository>
+    <!-- use the following if you ARE using a snapshot version. -->
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>RepositoryProxySnap</name>
+        <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
 
   <build>
     <finalName>${project.artifactId}</finalName>
